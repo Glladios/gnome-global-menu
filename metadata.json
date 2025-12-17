@@ -1,0 +1,12 @@
+{
+  "name": "Global Menu",
+  "description": "Adiciona um menu global na barra superior do GNOME, exibindo os menus dos aplicativos ativos",
+  "uuid": "globalmenu@gnome-shell-extensions",
+  "shell-version": [
+    "48",
+    "49"
+  ],
+  "version": 1,
+  "url": "https://github.com/seu-usuario/gnome-global-menu",
+  "settings-schema": "org.gnome.shell.extensions.globalmenu"
+}

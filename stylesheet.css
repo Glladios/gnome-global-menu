@@ -1,0 +1,65 @@
+/* Global Menu Extension Styles */
+
+.global-menu-app-label {
+    font-weight: bold;
+    padding: 0 12px;
+    color: #ffffff;
+    font-size: 10.5pt;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* Estilo para quando o mouse passa sobre o botão */
+.panel-button:hover .global-menu-app-label {
+    color: #eeeeee;
+}
+
+/* Estilo para quando o menu está aberto */
+.panel-button:active .global-menu-app-label,
+.panel-button:focus .global-menu-app-label,
+.panel-button:checked .global-menu-app-label {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+}
+
+/* Ajustes para o tema escuro */
+@media (prefers-color-scheme: dark) {
+    .global-menu-app-label {
+        color: #ffffff;
+    }
+}
+
+/* Ajustes para o tema claro */
+@media (prefers-color-scheme: light) {
+    .global-menu-app-label {
+        color: #2e3436;
+        text-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);
+    }
+}
+
+/* Espaçamento adicional para menus */
+.global-menu-separator {
+    height: 1px;
+    margin: 6px 0;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Estilo para items de menu desabilitados */
+.popup-menu-item:insensitive {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Animação suave ao abrir o menu */
+.popup-menu {
+    animation: fadeIn 0.15s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
